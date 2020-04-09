@@ -29,6 +29,7 @@ Things you may want to cover:
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
+
 ###Association
 - has_many :group_tag
 - has_many :comments
@@ -39,6 +40,7 @@ Things you may want to cover:
 |text|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
+
 ###Association
 - belong_to :user
 - belong_to :group_message

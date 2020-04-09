@@ -32,9 +32,9 @@ Things you may want to cover:
 
 ###Association
 - has_many :users_groups
-- has_many :comments
+- has_many :messages
 
-##commentsテーブル
+##messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
@@ -43,28 +43,17 @@ Things you may want to cover:
 
 ###Association
 - belong_to :user
-- belong_to :group_message
+- belong_to :group
 
 #groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |member|string||
-###Association
-- has_many :users_groups
-- has_many :groups_messages
-
-#groups_messagesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
-|commnet_id|integer|null: false, foreign_key: true|
 
 ###Association
 - has_many :users_groups
-- has_many :groups_messages
-
-
+- has_many :massages
 
 ##users_groupsテーブル
 |Column|Type|Options|

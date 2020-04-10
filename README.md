@@ -27,7 +27,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|member|string||
 
 ### Association
 - has_many :users_groups

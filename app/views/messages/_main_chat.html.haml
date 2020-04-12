@@ -1,0 +1,22 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__left-side
+      %h2.test test
+      %ul.mem Member:masa
+    .chat-main__group-info__right-side
+      = link_to '#', class: "chat-main__group-info__right-side__btn" do
+        = "Edit"
+  .chat-main__message-list
+    .chat-main__message-list__info
+      %ul.name masa
+      %li.date 2020/4/12
+    .chat-main__message-list__message
+      おはよう！
+  .chat-main__message-form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text" ,placeholder:"type a message"}
+        %label{class: "input-box__icon"}
+          = icon('fas','image')
+          %input{type:"file", class: "input-box__icon__file"}
+      %input{type: "submit", class: "submit",value:"Send"}

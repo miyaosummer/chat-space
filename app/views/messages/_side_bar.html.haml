@@ -1,0 +1,14 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name__top-items
+      .side-bar__user-name__top-items__name
+        masa
+      .side-bar__user-name__top-items__icons
+        = link_to "https://fontawesome.com/icons/edit?style=regular", class: "side-bar__user-name__top-items__icons__btn" do
+          = icon('far','edit')
+        = link_to "https://fontawesome.com/icons/edit?style=regular", class: "side-bar__user-name__top-items__icons__btn" do
+          = icon('fas','cog')
+  .side-bar__groups-list
+    .side-bar__groups-list__num
+      %li.tech techcamp
+      %li.mem まだメッセージがありません

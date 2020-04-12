@@ -76,13 +76,13 @@
       .test{
         margin: 0px 0px 15px 40px;
         font-size: 20px;
-        color: #333333;
+        color: $dark_navy;
       }
       .mem{
         margin-left: 40px;
         position: absolute;
         bottom: 0;
-        color: #999999;
+        color: $light_gray;
         font-size: 12px;
       }
     }
@@ -93,7 +93,7 @@
       margin: 28px 40px 28px 20px;
       display: flex;
       a{
-        color: #38aef0;
+        color: $sky;
         line-height: 40px;
         right: 40px;
         border: 1px solid $sky;
@@ -112,10 +112,10 @@
       font-size: 16px;
       display: flex;
       justify-content: left;
-      color: #333333;
+      color: $dark_navy;
       margin-bottom: 12px;
       .date{
-        color: #999999;
+        color: $light_gray;
         font-size: 12px;
         margin-left: 10px;
       }
@@ -123,7 +123,7 @@
 
     &__message{
       font-size: 14px;
-      color: #434a54;
+      color: $mad_gray;
       margin-bottom: 46px;
     }
   }
@@ -141,7 +141,7 @@
           &__text{
             height: 50px;
             width: 100%;
-            color: #434a54;
+            color: $mad_gray;
             border-style: none;
             padding: 0 40px 0 10px;
            }

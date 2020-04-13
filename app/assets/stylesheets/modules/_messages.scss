@@ -49,13 +49,26 @@
       font-weight: bold;
       padding-top: 20px;
       margin: 0px 20px 40px 20px;
-      .tech{
-        font-size: 15px;
+      a{
+        text-decoration: none;
+        color: $white;
+        .group__name{
+          font-size: 15px;
+        }
+        .group__message{
+          margin-top: 5px;
+          font-size: 11px;
+        }
+
+
       }
-      .mem{
-        margin-top: 5px;
-        font-size: 11px;
-      }
+      // .tech{
+      //   font-size: 15px;
+      // }
+      // .mem{
+      //   margin-top: 5px;
+      //   font-size: 11px;
+      // }
     }
   }
 

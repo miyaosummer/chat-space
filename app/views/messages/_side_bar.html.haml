@@ -4,11 +4,18 @@
       = current_user.name
       .side-bar__user-name__top-items__name
       .side-bar__user-name__top-items__icons
-        = link_to "https://fontawesome.com/icons/edit?style=regular", class: "side-bar__user-name__top-items__icons__btn" do
-          = icon('far','edit')
+        = link_to new_group_path(current_user) do
+          = icon('far','edit',class: "side-bar__user-name__top-items__icons__btn")
         = link_to edit_user_path(current_user) do
           = icon('fas','cog', class: 'side-bar__user-name__top-items__icons__btn')
   .side-bar__groups-list
     .side-bar__groups-list__num
-      %li.tech techcamp
-      %li.mem まだメッセージがありません
+      - current_user.groups.each do |group|
+        .group
+          = link_to '#' do
+            .group__name
+              = group.name
+            .group__message
+              メッセージはまだありません。
+      -# %li.tech techcamp
+      -# %li.mem まだメッセージがありません

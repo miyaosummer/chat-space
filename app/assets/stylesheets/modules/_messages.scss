@@ -6,7 +6,6 @@
 .wrapper{
   display: flex;
   list-style: none;
-
 }
 
 .side-bar{
@@ -45,6 +44,7 @@
   &__groups-list{
     height: calc( 100vh - 100px);
     background-color: #2f3e51;
+    overflow: auto;
     &__num {
       font-weight: bold;
       padding-top: 20px;
@@ -58,7 +58,7 @@
         .group__message{
           margin-top: 5px;
           font-size: 11px;
-        }
+          }
 
 
       }
@@ -82,21 +82,16 @@
     height: 100px;
     display: flex;
     justify-content: space-between;
-
     &__left-side{
-      margin-top: 35px;
-      position: relative;
-      .test{
-        margin: 0px 0px 15px 40px;
-        font-size: 20px;
-        color: $dark_navy;
-      }
-      .mem{
-        margin-left: 40px;
-        position: absolute;
-        bottom: 0;
+      margin: 35px 0px 15px 40px;
+      font-size: 20px;
+      color: $dark_navy;
+      &__lower-side{
+        margin-top: 15px;
         color: $light_gray;
         font-size: 12px;
+        display: flex;
+        justify-content: left;
       }
     }
 
@@ -117,67 +112,114 @@
   
     }
   }
-  &__message-list{
+
+  .messages{
     height: calc( 100vh - 190px);
     background-color: #fafafa;
     padding: 35px 0px 0px 40px;
-    &__info{
+    overflow: auto;
+    .upper-message__user-name{
       font-size: 16px;
       display: flex;
       justify-content: left;
       color: $dark_navy;
       margin-bottom: 12px;
-      .date{
+    .upper-message__date{
         color: $light_gray;
         font-size: 12px;
         margin-left: 10px;
       }
     }
-
-    &__message{
-      font-size: 14px;
-      color: $mad_gray;
-      margin-bottom: 46px;
+    .lower-message__image{
+        width: 200px;
+        height: 112.5px;
     }
+
+    // &__message{
+    //   font-size: 14px;
+    //   color: $mad_gray;
+    //   margin-bottom: 46px;
+    // }
   }
+
   &__message-form{
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-
-    form {
+    #new_message{
       display: flex;
-        .input-box{
-          display: flex;
-          position: relative;
-          width: 100%;
-          &__text{
-            height: 50px;
-            width: 100%;
-            color: $mad_gray;
-            border-style: none;
-            padding: 0 40px 0 10px;
-           }
-          &__icon{
-            position: absolute;
-            font-size: 1.3rem;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            &__file{
-              display: none;
-            }
-          }
-        }
-        .submit{
-          width: 100px;
+      width: 100%;
+      .input-box{
+        position: relative;
+        height: 50px;
+        width: 100%;
+        color: $mad_gray;
+        border-style: none;
+        padding: 0 80px 0 10px;
+        &__form__mask{
+          position: absolute;
           height: 50px;
-          padding: 0 30px;
-          margin-left: 15px;
-          background-color: $sky;
-          color:$white;
+          width: 50px;
+          font-size: 1.3rem;
+          margin-top: 10px;
+          right: 150px;
           cursor: pointer;
-        }
+            &__text{
+              input{
+                display: none;
+              }
+            }
+      }
+      }
+      // どこにsubmitを配置するか考える。
+      .submit{
+        width: 100px;
+        right: 0px;
+        // submitの配置が右端に行っていない
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: $sky;
+        color:$white;
+        cursor: pointer;
+      }
+     }
     }
   }
-}
+
+
+
+// form {
+//   display: flex;
+//     .input-box{
+//       display: flex;
+//       position: relative;
+//       width: 100%;
+//       &__text{
+//         height: 50px;
+//         width: 100%;
+//         color: $mad_gray;
+//         border-style: none;
+//         padding: 0 40px 0 10px;
+//        }
+//       &__icon{
+//         position: absolute;
+//         font-size: 1.3rem;
+//         top: 10px;
+//         right: 10px;
+//         cursor: pointer;
+//         &__file{
+//           display: none;
+//         }
+//       }
+//     }
+//     .submit{
+//       width: 100px;
+//       height: 50px;
+//       padding: 0 30px;
+//       margin-left: 15px;
+//       background-color: $sky;
+//       color:$white;
+//       cursor: pointer;
+//     }
+// }

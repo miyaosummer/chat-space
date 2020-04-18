@@ -62,13 +62,6 @@
 
 
       }
-      // .tech{
-      //   font-size: 15px;
-      // }
-      // .mem{
-      //   margin-top: 5px;
-      //   font-size: 11px;
-      // }
     }
   }
 
@@ -134,12 +127,10 @@
         width: 200px;
         height: 112.5px;
     }
-
-    // &__message{
-    //   font-size: 14px;
-    //   color: $mad_gray;
-    //   margin-bottom: 46px;
-    // }
+    img{
+      width: 200px;
+      height: 112.5px;
+    }
   }
 
   &__message-form{
@@ -171,11 +162,9 @@
             }
       }
       }
-      // どこにsubmitを配置するか考える。
       .submit{
         width: 100px;
         right: 0px;
-        // submitの配置が右端に行っていない
         height: 50px;
         padding: 0 30px;
         margin-left: 15px;
@@ -186,40 +175,3 @@
      }
     }
   }
-
-
-
-// form {
-//   display: flex;
-//     .input-box{
-//       display: flex;
-//       position: relative;
-//       width: 100%;
-//       &__text{
-//         height: 50px;
-//         width: 100%;
-//         color: $mad_gray;
-//         border-style: none;
-//         padding: 0 40px 0 10px;
-//        }
-//       &__icon{
-//         position: absolute;
-//         font-size: 1.3rem;
-//         top: 10px;
-//         right: 10px;
-//         cursor: pointer;
-//         &__file{
-//           display: none;
-//         }
-//       }
-//     }
-//     .submit{
-//       width: 100px;
-//       height: 50px;
-//       padding: 0 30px;
-//       margin-left: 15px;
-//       background-color: $sky;
-//       color:$white;
-//       cursor: pointer;
-//     }
-// }
